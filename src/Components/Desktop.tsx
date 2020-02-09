@@ -15,6 +15,7 @@ export default function Desktop() {
   // TODO: Franken state!
   const [stats, setStats] = React.useState(new CharacterStats());
   const [dicePool, setDicePool] = React.useState([] as number[]);
+  const [diceWindowOpen, setDiceWindowOpen] = React.useState(false);
   
 
   function updateStat(updatedStat: NemesisStatictic){
@@ -60,7 +61,7 @@ export default function Desktop() {
   );
 
   function DrawRollResultWindow(){
-    if(dicePool.length > 0){
+    if(dicePool.length > 0 || diceWindowOpen){
       return(
         <DesktopWindow>
           <WindowTitle>Roll Result</WindowTitle>

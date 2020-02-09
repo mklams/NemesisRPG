@@ -20,11 +20,11 @@ export class CharacterStats{
         new Map(
         [
             [NemesisStaticticName.Body, 0],
-            [NemesisStaticticName.Command, 0],
             [NemesisStaticticName.Coordination, 0],
-            [NemesisStaticticName.Empathy, 0],
-            [NemesisStaticticName.Mind, 0],
             [NemesisStaticticName.Sense, 0],
+            [NemesisStaticticName.Mind, 0],
+            [NemesisStaticticName.Command, 0],
+            [NemesisStaticticName.Empathy, 0],
         ]);
     }
 
